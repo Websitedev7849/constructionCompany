@@ -177,17 +177,19 @@ body::after{
 
 .serviceInfo p{
     padding: 10px 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .serviceInfo p:nth-child(1){
     font-size: 20px;
     color: #050836;
-    font-weight: bold;
+    font-weight: 400;
     width: 70%;
 }
 
 .serviceInfo p:nth-child(2){
     color: #111111;
+    font-weight: 300;
 }
 
 @keyframes anim{
