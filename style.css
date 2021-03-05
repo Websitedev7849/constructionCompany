@@ -212,6 +212,7 @@ body::after{
 }
 
 .aboutText p{
+    font-family: 'Open Sans' , sans-serif;
     font-size: 1.1rem;
     width: 21rem;
 }
