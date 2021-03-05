@@ -43,7 +43,7 @@ body::after{
 }
 
 #logo{
-    background-color: #fff068;
+    background-color: rgb(247, 197, 59);
     height: 100%;
     width: 25%;
 }
@@ -145,7 +145,7 @@ body::after{
     display: block;
     width: 50%;
     height: 10%;
-    background-color: rgb(233, 230, 44);
+    background-color: rgb(247, 197, 59);
     margin: 5px 0% 0% 25%;
 }
 
@@ -217,7 +217,7 @@ body::after{
 }
 
 .numbersContainer{
-    background-color: #fff068;
+    background-color: rgb(247, 197, 59);
     width: 100%;
     height: 8rem;
     flex-wrap: wrap;
