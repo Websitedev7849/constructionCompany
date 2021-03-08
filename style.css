@@ -1,0 +1,484 @@
+/* tab : 828 , mobile 500 */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 812px;
+    background: url('images/intro-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::after , .projects .cardsContainer .cards::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 110vh;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar{
+    position: sticky;
+    top: 0%;
+    height: 4rem;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 3;
+}
+
+#logo{
+    background-color: #F7C53B;
+    height: 100%;
+    width: 25%;
+}
+
+.cName{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cName span:nth-child(1){
+    font-weight: 600;
+}
+
+.cName span:nth-child(2){
+    font-family: sans-serif;
+}
+
+.menu{
+    flex-direction: column;
+    height: 20px;
+    display: none;
+}
+
+.menu div{
+    height: 2px;
+    width: 20px;
+    border-radius: 100px;
+    background-color: black;
+}
+
+.navLinksContainer{
+    height: 100%;
+    width: 75%;
+    background-color: rgb(40, 39, 46);
+}
+
+.navLinks{
+    height: 100%;
+}
+
+.navLinks li{
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.navLinks li a:hover{
+    color: yellow;
+}
+
+.intro{
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.introSentence{
+    margin-top: -10rem;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+}
+
+.downwardContainer svg{
+    height: 100%;
+    width: 100%;
+    fill: white;
+}
+.downwardContainer{
+    position: absolute;
+    top: 60%;
+    height: 3.5rem;
+    width: 3.5rem;
+    animation: anim 3s infinite;
+}
+
+.services{
+    flex-direction: column;
+    padding-top: 2rem;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.title{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+.title::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 10%;
+    background-color: #F7C53B;
+    margin: 5px 0% 0% 25%;
+}
+
+.cardsContainer{
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cards{
+    flex-direction: column;
+    height: 26rem;
+    width: 17rem;
+}
+
+.cards img{
+    height: 12rem;
+    width: 100%;
+}
+
+.serviceInfo{
+    padding: 10px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #e2e0e0;
+    height: 16rem;
+}
+
+.serviceInfo p{
+    padding: 10px 0px;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+.serviceInfo p:nth-child(1){
+    font-size: 20px;
+    color: #050836;
+    font-weight: 400;
+    width: 70%;
+}
+
+.serviceInfo p:nth-child(2){
+    color: #111111;
+    font-weight: 300;
+}
+
+.about{
+    padding-top: 1rem;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+
+.aboutInfo{
+    background: url('images/about.jpg');
+    height: 36rem;
+    background-size: cover;
+    justify-content: flex-start;
+}
+
+.aboutText{
+    background-color: #e2e0e0;
+    flex-direction: column;
+    height: 100%;
+    width: 38rem;
+    padding-left: 1rem;
+}
+
+.aboutText p{
+    font-size: 1.1rem;
+    width: 21rem;
+}
+
+.numbersContainer{
+    background-color: #F7C53B;
+    width: 100%;
+    height: 8rem;
+    flex-wrap: wrap;
+}
+
+.numbers{
+    flex-direction: column;
+    height: 5.5rem;
+}
+
+.numbers span{
+    font-family: 'Ubuntu', sans-serif;
+    color: #050836;
+    
+}
+
+.numbers span:nth-child(1){
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+.numbers span:nth-child(2){
+    font-size: 1rem;
+    width: 6.9rem;
+    text-align: center;
+}
+
+.projects{
+    flex-direction: column;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.projects .cardsContainer{
+    margin-top: -5rem;
+}
+
+.projects .cardsContainer .cards{
+    height: 18rem;
+    width: 19rem;
+    position: relative;
+}
+
+.projects .cardsContainer .cards img{
+    height: 100%;
+    width: 100%;
+}
+
+.projects .cardsContainer .cards button{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    z-index: 2;
+    font-size: 1.5rem;
+    padding: 5px 9px;
+    font-family: 'Open Sans' , sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.projects .cardsContainer .cards::after{
+    display: none;
+}
+
+.projects .cardsContainer .cards:hover button{
+    display: inline-block;
+}
+
+.projects .cardsContainer .cards:hover::after{
+    display: inline-block;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 100%;
+    transition: top 0.4s;
+    flex-direction: column;
+}
+
+.nav{    
+    height: 5rem;
+    width: 100%;
+    background-color: #F7C53B;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav .title{
+    font-size: 2rem;
+}
+
+.content{
+    height: 90%;
+    flex-wrap: wrap;
+}
+
+.para{
+    width: 40%;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+.imageContainer{
+    width: 30rem;
+}
+
+.imageContainer img{
+    height: 100%;
+    width: 100%;
+}
+
+.close{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.close svg{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes anim{
+    0%{
+        top: 65%;
+    }
+    50%{
+        top: 70%;
+    }
+    100%{
+        top: 65%;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+
+    .navbar{
+        position: fixed;
+        top: 0%;
+        width: 100vw;
+    }
+    
+    #logo{
+        width: 100%;
+    }
+
+    .menu{
+        display: flex;
+        z-index: 1;
+    }
+    
+    .menu div{
+        transition: transform 0.2s;
+    }
+    
+    .navLinksContainer{
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        height: 100vh;
+        width: 40vw;
+        transition: transform 0.2s;
+    }
+    
+    .navLinks{
+        flex-direction: column;
+        height: 78%;
+        margin-top: 2.5rem;
+    }
+    
+    .navLinks li a{
+        font-size: 19px;
+    }
+    
+    .intro{
+        height: 80vh;
+    }
+
+    .introSentence{
+        margin-top: 3rem;
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    
+    .downwardContainer{
+        margin-top: 2rem;
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+    
+    .services{
+        justify-content: center;
+        height: 250vh;
+        height: 100rem;
+    }
+    
+    .cardsContainer{
+        margin-top: 5rem;
+        height: 80rem;
+    }
+    
+    .cards{
+        height: 20%;
+        margin-top: 0.5rem;
+    }
+    
+    .about{
+        height: auto;
+    }
+    
+    .aboutInfo{
+        padding-top: 13rem;
+    }
+
+    .aboutText p{
+        width: 80%;
+    }
+
+    .numbersContainer{
+        height: 16rem;
+    }
+    
+    .projects{
+        padding-top: 4rem;
+        height: auto;
+    }
+
+    .projects .cardsContainer{
+        margin-top: 2rem;
+    } 
+
+    .nav{
+        height: 4rem;
+    }
+
+    .nav .title{
+        font-size: 1.5rem;
+    }
+
+    .content{
+        height: 90%;
+    }
+
+    .para{
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .imageContainer{
+        width: 85%;
+    }
+}
+
