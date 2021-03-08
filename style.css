@@ -431,7 +431,7 @@ body::after , .projects .cardsContainer .cards::after{
         height: 80rem;
     }
     
-    .cards{
+    .services .cardsContainer .cards{
         height: 20%;
         margin-top: 5rem;
     }
