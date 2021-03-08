@@ -433,15 +433,15 @@ body::after , .projects .cardsContainer .cards::after{
     
     .cards{
         height: 20%;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
     
     .about{
-        height: 150vh;
+        height: 200vh;
     }
     
     .aboutInfo{
-        padding-top: 13rem;
+        padding-top: 8rem;
     }
 
     .aboutText p{
