@@ -437,7 +437,7 @@ body::after , .projects .cardsContainer .cards::after{
     }
     
     .about{
-        height: 200vh;
+        height: 150vh;
     }
     
     .aboutInfo{
@@ -446,6 +446,7 @@ body::after , .projects .cardsContainer .cards::after{
 
     .aboutText p{
         width: 80%;
+        padding: 2rem 0;
     }
 
     .numbersContainer{
