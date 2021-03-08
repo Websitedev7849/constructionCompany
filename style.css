@@ -402,10 +402,11 @@ body::after , .projects .cardsContainer .cards::after{
     .navLinks li a{
         font-size: 19px;
     }
-    
+    /*
     .intro{
         height: 80vh;
-    }
+    } 
+    */
 
     .introSentence{
         margin-top: 3rem;
