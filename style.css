@@ -437,10 +437,11 @@ body::after , .projects .cardsContainer .cards::after{
     }
     
     .about{
-        height: 150vh;
+        height: auto;
     }
     
     .aboutInfo{
+        height: auto;
         padding-top: 8rem;
     }
 
