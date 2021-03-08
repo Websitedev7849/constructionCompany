@@ -422,11 +422,12 @@ body::after , .projects .cardsContainer .cards::after{
     }
     
     .cardsContainer{
-        margin-top: 4rem;
+        margin: 3.3rem 0;
         height: auto;
     }
     
-    .services .cardsContainer .cards{
+    .services .cardsContainer .cards ,
+    .projects .cardsContainer .cards{
         margin-top: 5rem;
     }
     
