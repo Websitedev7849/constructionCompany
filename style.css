@@ -417,7 +417,7 @@ body::after , .projects .cardsContainer .cards::after{
     
     .services{
         justify-content: center;
-        height: 250vh;
+        padding-top: 8rem;
         height: 100rem;
     }
     
