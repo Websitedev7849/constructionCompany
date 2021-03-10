@@ -214,8 +214,9 @@ body::after , .projects .cardsContainer .cards::after{
 }
 
 .aboutText p{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     width: 21rem;
+    font-family: 'Open Sans' , sans-serif;
 }
 
 .numbersContainer{
