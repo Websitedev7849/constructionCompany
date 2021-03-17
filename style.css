@@ -475,6 +475,10 @@ input:last-child{
     margin-top: -2rem;
 }
 
+iframe{
+    height: 100%;
+    width: 100%;
+}
 
 @keyframes anim{
     0%{
